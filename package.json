@@ -1,0 +1,28 @@
+{
+  "name": "xing-frontend-grunt",
+  "version": "0.0.1",
+  "description": "The toolset for building Xing frontend applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XingFramework/xing-frontend-grunt.git"
+  },
+  "keywords": [
+    "grunt",
+    "xing",
+    "frontend",
+    "build"
+  ],
+  "author": "Logical Reality Design, Inc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XingFramework/xing-frontend-grunt/issues"
+  },
+  "homepage": "https://github.com/XingFramework/xing-frontend-grunt",
+  "dependencies": {
+    "load-grunt-config": "^0.17.2"
+  }
+}
