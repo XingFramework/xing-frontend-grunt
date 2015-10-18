@@ -41,12 +41,12 @@ module.exports =
   jssrc: {
     options: { livereloadOnError: false },
     files: [ 'src/**/*.js' ],
-    tasks: [ 'traceur:es6src', 'jshint:src', 'traceur:build', 'ngAnnotate:build'],
+    tasks: [ 'xing-traceur:es6src', 'jshint:src', 'xing-traceur:build', 'ngAnnotate:build'],
   },
 
   js_qa: {
     files: [],
-    tasks: [ 'traceur:es6src', 'jshint:src', "jsonlint" ],
+    tasks: [ 'xing-traceur:es6src', 'jshint:src', "jsonlint" ],
     options: { atBegin: true }
   },
 
@@ -80,7 +80,7 @@ module.exports =
       '<%= app_files.atpl %>',
       '<%= app_files.ctpl %>'
     ],
-    tasks: [ 'html2js', 'traceur:build', 'ngAnnotate:build'],
+    tasks: [ 'html2js', 'xing-traceur:build', 'ngAnnotate:build'],
   },
 
   sass: {
@@ -100,7 +100,10 @@ module.exports =
     files: [
       'bin/assets/vendor.js', '<%= app_files.jstest %>', 'test/json-fixtures/**/*', '<%= compile_targets.js %>'
     ],
-    tasks: [ 'jsonlint:fixtures', 'traceur:es6test', 'traceur:es6testhelp', 'jshint:test', 'html2js:test','traceur:test', 'ngAnnotate:test', 'karma:unit:run' ],
+    tasks: [ 'jsonlint:fixtures', 'xing-traceur:es6test',
+      'xing-traceur:es6testhelp', 'jshint:test',
+      'html2js:test','xing-traceur:test', 'ngAnnotate:test', 'karma:unit:run'
+    ],
     options: {
       livereload: false,
       atBegin: true

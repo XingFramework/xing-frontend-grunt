@@ -4,6 +4,9 @@
  */
 module.exports =
 {
+  options: {
+    liveReloadPort: '<%= ports.liveReload %>'
+  },
 
   /**
    * When it is time to have a completely compiled application, we can

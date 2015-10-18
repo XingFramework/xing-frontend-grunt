@@ -20,11 +20,11 @@ module.exports = function(grunt) {
         {
           expand: true,
           cwd: './',
+          dest: './',
           src: [
             '<%= compile_targets.js %>',
             '<%= compile_targets.css %>'
-          ],
-          dest: './'
+          ]
         }
       ]
     }

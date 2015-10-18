@@ -12,9 +12,9 @@ modules.exports = function(grunt, options) {
 
   var buildConfig = require("./build-config.js");
   buildConfig.pkg = grunt.file.readJSON("package.json");
+  buildConfig.ports = portsConfig;
 
   lodash.merge(buildConfig, userConfig); //some concerns about correctness
-  lodash.merge(buildConfig, portsConfig);
 
   require('load-grunt-config')(
     grunt,
@@ -23,6 +23,7 @@ modules.exports = function(grunt, options) {
       data: buildConfig,
       configPath: path.join(__dirname, 'config'),
       overridePath: configOverride,
-      jitGrunt: jitGruntConfig
+      //jitGrunt: jitGruntConfig // XXX c.f. https://github.com/XingFramework/xing-frontend-grunt/issues/2
+
     });
 };

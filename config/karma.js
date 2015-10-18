@@ -3,7 +3,7 @@
  *
  * TODO: Add coverage to general Karma runs
  */
-var karmaRunnerPort = require('../support/karmaRunnerPort.js');
+var karmaRunnerPort = require('../../ports.js').karmaRunnerPort;
 
 module.exports =
 {
