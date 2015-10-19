@@ -19,8 +19,6 @@ module.exports = function(grunt, options) {
   lodash.merge(buildConfig, userConfig); //some concerns about correctness
   lodash.merge(jitGruntConfig, userJitGruntConfig);
 
-  console.log(buildConfig);
-
   require('load-grunt-config')(
     grunt,
     {
