@@ -1,4 +1,4 @@
-modules.exports = function(grunt, options) {
+module.exports = function(grunt, options) {
   var path = require('path');
   var lodash = require('lodash');
 
@@ -7,14 +7,19 @@ modules.exports = function(grunt, options) {
   var configOverride  = options.configOverride  || path.join(process.cwd(), 'config/grunt');
   var buildConfigPath = options.buildConfigPath || path.join(process.cwd(), "build.config.js");
   var userConfig      = options.buildConfig     || require(buildConfigPath);
-  var jitGruntConfig  = options.jitGrunt        || true;
+  var userJitGruntConfig  = options.jitGrunt    || {};
   var portsConfig     = options.portsConfig     || require('./ports.js');
+
+  var jitGruntConfig = { staticMappings: {}};
 
   var buildConfig = require("./build-config.js");
   buildConfig.pkg = grunt.file.readJSON("package.json");
   buildConfig.ports = portsConfig;
 
   lodash.merge(buildConfig, userConfig); //some concerns about correctness
+  lodash.merge(jitGruntConfig, userJitGruntConfig);
+
+  console.log(buildConfig);
 
   require('load-grunt-config')(
     grunt,
@@ -23,7 +28,7 @@ modules.exports = function(grunt, options) {
       data: buildConfig,
       configPath: path.join(__dirname, 'config'),
       overridePath: configOverride,
-      //jitGrunt: jitGruntConfig // XXX c.f. https://github.com/XingFramework/xing-frontend-grunt/issues/2
+      jitGrunt: jitGruntConfig // XXX c.f. https://github.com/XingFramework/xing-frontend-grunt/issues/2
 
     });
 };

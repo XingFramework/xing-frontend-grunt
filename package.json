@@ -22,11 +22,10 @@
     "url": "https://github.com/XingFramework/xing-frontend-grunt/issues"
   },
   "homepage": "https://github.com/XingFramework/xing-frontend-grunt",
-  "dependencies": {
+  "peerDependencies": {
     "grunt": "^0.4.5",
     "grunt-bump": "0.0.13",
     "grunt-bushcaster": "0.0.7",
-    "grunt-cli": "~0.1.13",
     "grunt-concat-sourcemap": "^0.4.3",
     "grunt-concurrent": "^1.0.0",
     "grunt-contrib-clean": "~0.5.0",
@@ -42,9 +41,12 @@
     "grunt-jsonlint": "^1.0.4",
     "grunt-karma": "~0.8.3",
     "grunt-ng-annotate": "^0.3.2",
-    "grunt-string-replace": "git://github.com/hannahhoward/grunt-string-replace",
-    "load-grunt-config": "^0.17.2",
+    "xing-grunt-revise": "^0.0.1",
     "xing-index": "0.0.1",
     "xing-traceur": "0.0.7"
+  },
+  "dependencies": {
+    "load-grunt-config": "^0.17.2",
+    "lodash": "^3.10.1"
   }
 }

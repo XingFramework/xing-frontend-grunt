@@ -8,8 +8,6 @@
  *
  * But we don't need the same thing to happen for all the files.
  */
-var liveReloadPort = require("../support/liveReloadPort.js");
-
 module.exports =
 {
   /**
@@ -19,7 +17,7 @@ module.exports =
    * plugin should auto-detect.
    */
   options: {
-    livereload: liveReloadPort
+    livereload: require("../ports.js").liveReload
   },
 
   /**
@@ -124,5 +122,4 @@ module.exports =
       reload: true
     }
   },
-
-}
+};

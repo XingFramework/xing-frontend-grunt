@@ -1,4 +1,4 @@
-var liveReloadPort = require('../support/liveReloadPort.js');
+var liveReloadPort = require('../ports.js').liveReload;
 
 module.exports = {
   server: {
