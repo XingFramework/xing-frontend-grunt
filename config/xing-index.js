@@ -14,20 +14,26 @@ module.exports =
    * file. Now we're back!
    */
   build: {
-    dir: '<%= compile_dir %>',
-    src: [
-      "bin/assets/traceur-runtime.js",
+    src: ['<%= app_files.html %>'],
+    dest: '<%= compile_targets.index %>',
+    js: [
+      '<%= compile_targets.traceur_runtime %>',
       '<%= compile_targets.vendor_js %>',
-      '<%= compile_targets.js %>',
+      '<%= compile_targets.js %>'
+    ],
+    css: [
       '<%= compile_targets.css %>'
     ]
   },
 
   deploy: {
     production: true,
-    dir: '<%= compile_dir %>',
-    src: [
-      '<%= compile_targets.js %>',
+    src: ['<%= app_files.html %>'],
+    dest: '<%= compile_targets.index %>',
+    js: [
+      '<%= compile_targets.js %>'
+    ],
+    css: [
       '<%= compile_targets.css %>'
     ]
   }

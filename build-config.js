@@ -25,6 +25,7 @@ module.exports = {
     vendor_js: '<%= compile_dir %>/assets/vendor.js',
     css: '<%= compile_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css',
     map: '<%= compile_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.map',
+    index: "<%= compile_dir %>/index.html"
   },
 
   /**
