@@ -16,25 +16,29 @@ module.exports =
   build: {
     src: ['<%= app_files.html %>'],
     dest: '<%= compile_targets.index %>',
-    js: [
-      '<%= compile_targets.traceur_runtime %>',
-      '<%= compile_targets.vendor_js %>',
-      '<%= compile_targets.js %>'
-    ],
-    css: [
-      '<%= compile_targets.css %>'
-    ]
+    options: {
+      js: [
+        '<%= compile_targets.traceur_runtime %>',
+        '<%= compile_targets.vendor_js %>',
+        '<%= compile_targets.js %>'
+      ],
+      css: [
+        '<%= compile_targets.css %>'
+      ]
+    }
   },
 
   deploy: {
-    production: true,
     src: ['<%= app_files.html %>'],
     dest: '<%= compile_targets.index %>',
-    js: [
-      '<%= compile_targets.js %>'
-    ],
-    css: [
-      '<%= compile_targets.css %>'
-    ]
+    options: {
+      production: true,
+      js: [
+        '<%= compile_targets.js %>'
+      ],
+      css: [
+        '<%= compile_targets.css %>'
+      ]
+    }
   }
 };
