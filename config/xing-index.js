@@ -6,7 +6,7 @@ module.exports =
 {
   options: {
     liveReloadPort: '<%= ports.liveReload %>',
-    sourceRE: "^('<%=build_dirs.root %>'|'<%= compile_dir %>')\/"
+    sourceRE: "^(<%=build_dirs.root %>|<%= compile_dir %>)\/"
   },
 
   /**
