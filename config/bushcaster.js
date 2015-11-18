@@ -1,4 +1,3 @@
-
 module.exports = function(grunt) {
   return {
     options: {
@@ -13,7 +12,7 @@ module.exports = function(grunt) {
             replacement: map[file].replace( dirRE, '' )
           });
         });
-        grunt.file.write(grunt.config('fingerprintCache'), JSON.stringify(cacheMap));
+        grunt.config('fingerprintCache', cacheMap);
       }
     },
     dist: {

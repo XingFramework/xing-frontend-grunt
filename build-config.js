@@ -18,7 +18,6 @@ module.exports = {
   compile_dir: 'bin',
   //compile_dir: '../server/public',
   tmp_dir: 'tmp',
-  fingerprintCache: "<%= tmp_dir %>/fingerprints.json",
 
   compile_targets: {
     js: '<%= compile_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.js',
