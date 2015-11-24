@@ -27,7 +27,7 @@ module.exports = {
       'build',
       'xing-traceur:build',
       'copy:traceur_runtime',
-      'index:build',
+      'xing-index:build',
       'ngAnnotate:build',
       'ngAnnotate:build_vendor'
     ]
@@ -67,7 +67,7 @@ module.exports = {
       'jshint:precompile',
       'build',
       'xing-traceur:deploy',
-      'index:deploy',
+      'xing-index:deploy',
       'concat_sourcemap:compile_js',
       'ngAnnotate:compile',
       'uglify',
