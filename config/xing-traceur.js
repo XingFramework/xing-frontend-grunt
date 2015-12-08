@@ -30,7 +30,7 @@ module.exports =
       "xing-inflector": "../../node_modules/xing-inflector/dist/xing-inflector.js",
       "config": "../../src/common/config.js",
       "backend": "../../src/framework/backend",
-      "relayer": "../../node_modules/relayer/dist/relayer.js",
+      "relayer": "../../node_modules/relayer/src/relayer.js",
       "stateInjector": "../../src/framework/stateInjector.js",
       "stateClasses": "../../src/framework/stateClasses.js",
       // Example for multi-platform setups:
