@@ -31,7 +31,7 @@ module.exports =
       "xing-frontend-utils": "../../node_modules/xing-frontend-utils/src/xing-frontend-utils.js",
       "config": "../../src/common/config.js",
       "backend": "../../src/framework/backend",
-      "relayer": "../../node_modules/relayer/dist/relayer.js",
+      "relayer": "../../node_modules/relayer/src/relayer.js",
       "stateInjector": "../../node_modules/xing-frontend-utils/src/xing-frontend-utils/stateInjector.js",
       "stateClasses": "../../node_modules/xing-frontend-utils/src/xing-frontend-utils/stateClasses.js"
       // Example for multi-platform setups:
