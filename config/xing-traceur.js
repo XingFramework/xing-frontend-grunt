@@ -26,7 +26,7 @@ module.exports =
       "components": "../../src/common/components",
       "framework": "../../src/framework",
       "resources": "../../src/common/resources",
-      "a1atscript": "../../node_modules/a1atscript/dist/a1atscript.js",
+      "a1atscript": "../../node_modules/a1atscript/src/a1atscript.js",
       "xing-inflector": "../../node_modules/xing-inflector/dist/xing-inflector.js",
       "config": "../../src/common/config.js",
       "backend": "../../src/framework/backend",
