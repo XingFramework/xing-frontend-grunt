@@ -5,7 +5,8 @@
 module.exports =
 {
   options: {
-    liveReloadPort: '<%= ports.liveReload %>'
+    liveReloadPort: '<%= ports.liveReload %>',
+    sourceRE: "^(<%=build_dirs.root %>|<%= compile_dir %>)\/"
   },
 
   /**
@@ -14,21 +15,31 @@ module.exports =
    * file. Now we're back!
    */
   build: {
-    dir: '<%= compile_dir %>',
-    src: [
-      "bin/assets/traceur-runtime.js",
-      '<%= compile_targets.vendor_js %>',
-      '<%= compile_targets.js %>',
-      '<%= compile_targets.css %>'
-    ]
+    src: ['<%= app_files.html %>'],
+    dest: '<%= compile_targets.index %>',
+    options: {
+      js: [
+        '<%= compile_targets.traceur_runtime %>',
+        '<%= compile_targets.vendor_js %>',
+        '<%= compile_targets.js %>'
+      ],
+      css: [
+        '<%= compile_targets.css %>'
+      ]
+    }
   },
 
   deploy: {
-    production: true,
-    dir: '<%= compile_dir %>',
-    src: [
-      '<%= compile_targets.js %>',
-      '<%= compile_targets.css %>'
-    ]
+    src: ['<%= app_files.html %>'],
+    dest: '<%= compile_targets.index %>',
+    options: {
+      production: true,
+      js: [
+        '<%= compile_targets.js %>'
+      ],
+      css: [
+        '<%= compile_targets.css %>'
+      ]
+    }
   }
 };

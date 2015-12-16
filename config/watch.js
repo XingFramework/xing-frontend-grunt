@@ -64,7 +64,7 @@ module.exports =
    */
   html: {
     files: [ '<%= app_files.html %>' ],
-    tasks: [ 'index:build' ],
+    tasks: [ 'xing-index:build' ],
     options: {
       atBegin: true
     }

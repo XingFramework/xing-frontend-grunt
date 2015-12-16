@@ -54,7 +54,7 @@ module.exports =
   },
   test: {
     options: {
-      includeRuntime: true,
+      includeRuntime: false,
       traceurOptions: traceurOptions
     },
     files: { '<%= build_dirs.test%>/test-main.js': '<%= app_files.jsunit %>' }
