@@ -26,14 +26,15 @@ module.exports =
       "components": "../../src/common/components",
       "framework": "../../src/framework",
       "resources": "../../src/common/resources",
-      "a1atscript": "../../node_modules/a1atscript/dist/a1atscript.js",
+      "a1atscript": "../../node_modules/a1atscript/src/a1atscript.js",
       "xing-inflector": "../../node_modules/xing-inflector/dist/xing-inflector.js",
       "xing-promise": "../../node_modules/xing-promise/dist/xing-promise.js",
+      "xing-frontend-utils": "../../node_modules/xing-frontend-utils/src/xing-frontend-utils.js",
+      "stateInjector": "../../node_modules/xing-frontend-utils/src/xing-frontend-utils/stateInjector.js",
+      "stateClasses": "../../node_modules/xing-frontend-utils/src/xing-frontend-utils/stateClasses.js",
       "config": "../../src/common/config.js",
       "backend": "../../src/framework/backend",
       "relayer": "../../node_modules/relayer/dist/relayer.js",
-      "stateInjector": "../../src/framework/stateInjector.js",
-      "stateClasses": "../../src/framework/stateClasses.js",
       // Example for multi-platform setups:
       //"../../../web/src/app/app.js": {
       //  "frontend": "../..",
