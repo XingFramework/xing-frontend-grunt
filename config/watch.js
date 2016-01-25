@@ -17,7 +17,7 @@ module.exports =
    * plugin should auto-detect.
    */
   options: {
-    livereload: require("../ports.js").liveReload
+    livereload: require("../ports.js").liveReloadPort
   },
 
   /**
