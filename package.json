@@ -1,6 +1,6 @@
 {
   "name": "xing-frontend-grunt",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "The toolset for building Xing frontend applications",
   "main": "index.js",
   "scripts": {
