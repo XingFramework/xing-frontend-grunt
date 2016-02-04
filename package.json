@@ -1,6 +1,6 @@
 {
   "name": "xing-frontend-grunt",
-  "version": "0.0.11",
+  "version": "1.0.0-beta",
   "description": "The toolset for building Xing frontend applications",
   "main": "index.js",
   "scripts": {
@@ -41,9 +41,9 @@
     "grunt-jsonlint": "^1.0.4",
     "grunt-karma": "~0.8.3",
     "grunt-ng-annotate": "^0.3.2",
-    "xing-grunt-revise": "^0.0.1",
-    "grunt-xing-index": "^0.0.3",
-    "xing-traceur": "^0.0.8"
+    "xing-grunt-revise": "= 1.0.0-beta",
+    "grunt-xing-index": "= 1.0.0-beta",
+    "xing-traceur": "= 1.0.0-beta"
   },
   "dependencies": {
     "load-grunt-config": "^0.17.2",
