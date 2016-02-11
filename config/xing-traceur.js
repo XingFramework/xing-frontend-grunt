@@ -45,7 +45,11 @@ module.exports =
 
     },
   build: {
-    files: { '<%= compile_targets.js %>': '<%= app_files.js_roots %>' }
+    files: {
+      srcDir: '<%= app_files.js_dir %>',
+      destDir: '<%= build_dir %>/<%= app_files.js_dir %>',
+      traceurOptions: traceurOptions
+    }
   },
   deploy: {
     options: {
